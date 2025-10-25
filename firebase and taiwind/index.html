@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Firebase Tutorial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans max-w-2xl mx-auto my-12 px-5">
+    <h1 class="text-3xl color-red font-bold mb-6">Firebase GET & POST</h1>
+
+    <h3 class="text-xl font-semibold mb-3"> POST - Send Data</h3>
+    <input type="text" id="name" placeholder="Name" class="w-full p-2.5 my-1 border border-gray-300 rounded">
+    <input type="email" id="email" placeholder="Email" class="w-full p-2.5 my-1 border border-gray-300 rounded">
+    <textarea id="msg" placeholder="Message" rows="3" class="w-full p-2.5 my-1 border border-gray-300 rounded"></textarea>
+    <button onclick="sendData()" class="bg-blue-500 hover:bg-blue-600 text-white p-2.5 border-none w-full cursor-pointer rounded">Send to Firebase</button>
+    <p id="status" class="mt-2"></p>
+
+    <hr class="my-6">
+
+    <h3 class="text-xl font-semibold  mb-3"> GET - Get Data</h3>
+    <button onclick="getData()" class="bg-blue-500 hover:bg-blue-600 text-white p-2.5 border-none w-full cursor-pointer rounded mb-4">Get All Data</button>
+    <div id="dataDisplay"></div>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
